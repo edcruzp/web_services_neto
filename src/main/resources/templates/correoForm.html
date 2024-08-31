@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAlidacion Correo</title>
+</head>
+<body>
+    <h1>VAlidacion Correo</h1>
+    <form action="#" th:action="@{/validarCorreo}" th:object="${emailForm}" method="post">
+        <label for="correo">Email:</label>
+        <input type="text" id="correo" th:field="*{correo}" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

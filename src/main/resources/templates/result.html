@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Result</title>
+</head>
+<body>
+    <h1>Email Validation Result</h1>
+    <p>Email: <span th:text="${correo}">example@example.com</span></p>
+    <p th:if="${isValid}" style="color: green;">The email address is valid.</p>
+    <p th:if="${!isValid}" style="color: red;">The email address is invalid.</p>
+    <a href="/" >Go back</a>
+</body>
+</html>

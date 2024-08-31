@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Números Aleatorios</title>
+</head>
+<body>
+    <h1>Lista de Números Aleatorios</h1>
+    <ul>
+        <li th:each="number : ${personas}" th:text="${number}"></li>
+    </ul>
+    <a href="/tuproyecto/numeros">Generar Nuevos Números</a>
+</body>
+</html>

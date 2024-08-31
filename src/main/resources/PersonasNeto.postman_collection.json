@@ -1,0 +1,195 @@
+{
+	"info": {
+		"_postman_id": "1b9f144e-9c4f-43aa-aff7-039492447c7f",
+		"name": "PersonasNeto",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17033792"
+	},
+	"item": [
+		{
+			"name": "hello",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/hello",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hello"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lista numero aleatorios",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/tuproyecto/numeros",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tuproyecto",
+						"numeros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "registraUsuario y regresa ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/formRegistraUsuario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"formRegistraUsuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "numeros pares e impares",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/tuproyecto/pares",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tuproyecto",
+						"pares"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "validar correo - correo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"correo\": \"eduardod21@mail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/tuproyecto/validacorreo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tuproyecto",
+						"validacorreo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear archivo - Lista",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"id\": 1,\r\n        \"nombre\": \"Juan Pérez\",\r\n\t\t\"apellidoPaterno\": \"Juan Pérez\",\r\n\t\t\"apellidoMaterno\": \"Juan Pérez MAT\",\r\n\t\t\"edad\": 21\r\n        \r\n    },\r\n    {\r\n        \"id\": 2,\r\n        \"nombre\": \"Ana Gómez\",\r\n\t\t\"apellidoPaterno\": \"Pérez\",\r\n\t\t\"apellidoMaterno\": \"MAT\",\r\n\t\t\"edad\": 29\r\n        \r\n    },\r\n    {\r\n        \"id\": 2,\r\n        \"nombre\": \"Ana Gómez\",\r\n\t\t\"apellidoPaterno\": \"Pérez\",\r\n\t\t\"apellidoMaterno\": \"MAT\",\r\n\t\t\"edad\": 29\r\n        \r\n    },\r\n    {\r\n        \"id\": 2,\r\n        \"nombre\": \"Ana Gómez\",\r\n\t\t\"apellidoPaterno\": \"Pérez\",\r\n\t\t\"apellidoMaterno\": \"MAT\",\r\n\t\t\"edad\": 29\r\n        \r\n    },\r\n    {\r\n        \"id\": 2,\r\n        \"nombre\": \"Ana Gómez\",\r\n\t\t\"apellidoPaterno\": \"Pérez\",\r\n\t\t\"apellidoMaterno\": \"MAT\",\r\n\t\t\"edad\": 29\r\n        \r\n    },\r\n    {\r\n        \"id\": 2,\r\n        \"nombre\": \"Ana Gómez\",\r\n\t\t\"apellidoPaterno\": \"Pérez\",\r\n\t\t\"apellidoMaterno\": \"MAT\",\r\n\t\t\"edad\": 29\r\n        \r\n    },\r\n    {\r\n        \"id\": 2,\r\n        \"nombre\": \"Ana Gómez\",\r\n\t\t\"apellidoPaterno\": \"Pérez\",\r\n\t\t\"apellidoMaterno\": \"MAT\",\r\n\t\t\"edad\": 29\r\n        \r\n    },\r\n    {\r\n        \"id\": 2,\r\n        \"nombre\": \"Ana Gómez\",\r\n\t\t\"apellidoPaterno\": \"Pérez\",\r\n\t\t\"apellidoMaterno\": \"MAT\",\r\n\t\t\"edad\": 29\r\n        \r\n    },\r\n    {\r\n        \"id\": 2,\r\n        \"nombre\": \"Ana Gómez\",\r\n\t\t\"apellidoPaterno\": \"Pérez\",\r\n\t\t\"apellidoMaterno\": \"MAT\",\r\n\t\t\"edad\": 29\r\n        \r\n    },\r\n    {\r\n        \"id\": 2,\r\n        \"nombre\": \"Ana Gómez\",\r\n\t\t\"apellidoPaterno\": \"Pérez\",\r\n\t\t\"apellidoMaterno\": \"MAT\",\r\n\t\t\"edad\": 29\r\n        \r\n    },\r\n    {\r\n        \"id\": 2,\r\n        \"nombre\": \"Ana Gómez\",\r\n\t\t\"apellidoPaterno\": \"Pérez\",\r\n\t\t\"apellidoMaterno\": \"MAT\",\r\n\t\t\"edad\": 29\r\n        \r\n    },\r\n    {\r\n        \"id\": 2,\r\n        \"nombre\": \"Ana Gómez\",\r\n\t\t\"apellidoPaterno\": \"Pérez\",\r\n\t\t\"apellidoMaterno\": \"MAT\",\r\n\t\t\"edad\": 29\r\n        \r\n    },\r\n    {\r\n        \"id\": 2,\r\n        \"nombre\": \"Ana Gómez\",\r\n\t\t\"apellidoPaterno\": \"Pérez\",\r\n\t\t\"apellidoMaterno\": \"MAT\",\r\n\t\t\"edad\": 29\r\n        \r\n    },\r\n    {\r\n        \"id\": 2,\r\n        \"nombre\": \"Ana Gómez\",\r\n\t\t\"apellidoPaterno\": \"Pérez\",\r\n\t\t\"apellidoMaterno\": \"MAT\",\r\n\t\t\"edad\": 29\r\n        \r\n    },\r\n    {\r\n        \"id\": 2,\r\n        \"nombre\": \"Ana Gómez\",\r\n\t\t\"apellidoPaterno\": \"Pérez\",\r\n\t\t\"apellidoMaterno\": \"MAT\",\r\n\t\t\"edad\": 29\r\n        \r\n    },\r\n    {\r\n        \"id\": 2,\r\n        \"nombre\": \"Ana Gómez\",\r\n\t\t\"apellidoPaterno\": \"Pérez\",\r\n\t\t\"apellidoMaterno\": \"MAT\",\r\n\t\t\"edad\": 29\r\n        \r\n    },\r\n    {\r\n        \"id\": 2,\r\n        \"nombre\": \"Ana Gómez\",\r\n\t\t\"apellidoPaterno\": \"Pérez\",\r\n\t\t\"apellidoMaterno\": \"MAT\",\r\n\t\t\"edad\": 29\r\n        \r\n    },\r\n    {\r\n        \"id\": 2,\r\n        \"nombre\": \"Ana Gómez\",\r\n\t\t\"apellidoPaterno\": \"Pérez\",\r\n\t\t\"apellidoMaterno\": \"MAT\",\r\n\t\t\"edad\": 29\r\n        \r\n    },\r\n    {\r\n        \"id\": 2,\r\n        \"nombre\": \"Ana Gómez\",\r\n\t\t\"apellidoPaterno\": \"Pérez\",\r\n\t\t\"apellidoMaterno\": \"MAT\",\r\n\t\t\"edad\": 29\r\n        \r\n    },\r\n    {\r\n        \"id\": 2,\r\n        \"nombre\": \"Ana Gómez\",\r\n\t\t\"apellidoPaterno\": \"Pérez\",\r\n\t\t\"apellidoMaterno\": \"MAT\",\r\n\t\t\"edad\": 29\r\n        \r\n    },\r\n    {\r\n        \"id\": 2,\r\n        \"nombre\": \"Ana Gómez\",\r\n\t\t\"apellidoPaterno\": \"Pérez\",\r\n\t\t\"apellidoMaterno\": \"MAT\",\r\n\t\t\"edad\": 29\r\n        \r\n    },\r\n    {\r\n        \"id\": 2,\r\n        \"nombre\": \"Ana Gómez\",\r\n\t\t\"apellidoPaterno\": \"Pérez\",\r\n\t\t\"apellidoMaterno\": \"MAT\",\r\n\t\t\"edad\": 29\r\n        \r\n    },\r\n    {\r\n        \"id\": 2,\r\n        \"nombre\": \"Ana Gómez\",\r\n\t\t\"apellidoPaterno\": \"Pérez\",\r\n\t\t\"apellidoMaterno\": \"MAT\",\r\n\t\t\"edad\": 29\r\n        \r\n    },\r\n    {\r\n        \"id\": 2,\r\n        \"nombre\": \"Ana Gómez\",\r\n\t\t\"apellidoPaterno\": \"Pérez\",\r\n\t\t\"apellidoMaterno\": \"MAT\",\r\n\t\t\"edad\": 29\r\n        \r\n    },\r\n    {\r\n        \"id\": 2,\r\n        \"nombre\": \"Ana Gómez\",\r\n\t\t\"apellidoPaterno\": \"Pérez\",\r\n\t\t\"apellidoMaterno\": \"MAT\",\r\n\t\t\"edad\": 29\r\n        \r\n    },\r\n    {\r\n        \"id\": 2,\r\n        \"nombre\": \"Ana Gómez\",\r\n\t\t\"apellidoPaterno\": \"Pérez\",\r\n\t\t\"apellidoMaterno\": \"MAT\",\r\n\t\t\"edad\": 29\r\n        \r\n    },\r\n    {\r\n        \"id\": 2,\r\n        \"nombre\": \"Ana Gómez\",\r\n\t\t\"apellidoPaterno\": \"Pérez\",\r\n\t\t\"apellidoMaterno\": \"MAT\",\r\n\t\t\"edad\": 29\r\n        \r\n    },\r\n    {\r\n        \"id\": 2,\r\n        \"nombre\": \"Ana Gómez\",\r\n\t\t\"apellidoPaterno\": \"Pérez\",\r\n\t\t\"apellidoMaterno\": \"MAT\",\r\n\t\t\"edad\": 29\r\n        \r\n    },\r\n    {\r\n        \"id\": 2,\r\n        \"nombre\": \"Ana Gómez\",\r\n\t\t\"apellidoPaterno\": \"Pérez\",\r\n\t\t\"apellidoMaterno\": \"MAT\",\r\n\t\t\"edad\": 29\r\n        \r\n    },\r\n    {\r\n        \"id\": 2,\r\n        \"nombre\": \"Ana Gómez\",\r\n\t\t\"apellidoPaterno\": \"Pérez\",\r\n\t\t\"apellidoMaterno\": \"MAT\",\r\n\t\t\"edad\": 29\r\n        \r\n    },\r\n    {\r\n        \"id\": 2,\r\n        \"nombre\": \"Ana Gómez\",\r\n\t\t\"apellidoPaterno\": \"Pérez\",\r\n\t\t\"apellidoMaterno\": \"MAT\",\r\n\t\t\"edad\": 29\r\n        \r\n    },\r\n    {\r\n        \"id\": 2,\r\n        \"nombre\": \"Ana Gómez\",\r\n\t\t\"apellidoPaterno\": \"Pérez\",\r\n\t\t\"apellidoMaterno\": \"MAT\",\r\n\t\t\"edad\": 29\r\n        \r\n    },\r\n    {\r\n        \"id\": 2,\r\n        \"nombre\": \"Ana Gómez\",\r\n\t\t\"apellidoPaterno\": \"Pérez\",\r\n\t\t\"apellidoMaterno\": \"MAT\",\r\n\t\t\"edad\": 29\r\n        \r\n    }\r\n]\r\n\t",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/tuproyecto/creaArchivo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tuproyecto",
+						"creaArchivo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pendiente......",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"correo\": \"eduardod21@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
