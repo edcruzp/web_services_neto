@@ -1,0 +1,1068 @@
+*{
+	margin:0;
+	padding:0;border:0;
+	list-style: none;
+}
+html{
+	/*height:100%;*/
+}
+body{
+	/*height:100% !important;*/
+}
+
+#Contenedor{
+	width:989px;
+	height:735px;
+	margin:auto;	
+}
+
+#header{
+	width:989px;
+	height:85px;
+	display:block;
+	margin-top:5px;
+}
+.h1Left{
+	background:url(../../imagenes/netoOnline/h1.png) no-repeat ;
+	width:10px;
+	height:85px;
+	float:left;
+}
+.h2bg{
+	background:url(../../imagenes/netoOnline/h2bg_big2.png) no-repeat ;
+	width:969px;
+	height:85px;
+	float:left;
+}
+#logo{
+	width:190px;
+	height:54px;
+	float:left;
+	background:url(../../imagenes/netoOnline/logoNeto.png) no-repeat;
+	margin:5px; 
+}
+
+#slogan{
+	margin:10px 0 0 0px;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size:17px;
+	color:#1a4579;
+	float:left;
+	font-variant:normal;
+}
+
+.titulo{
+	margin:20px 0 0 150px;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size:15px;
+	color:#e84300;
+	float:left;
+	font-variant:normal;
+}
+
+.lspacing2{
+	letter-spacing:2px;
+}
+.tex20{	
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:20px;
+}
+
+.tex17{
+	font-size:17px;
+}
+.tex11{
+	font-size:11px;
+}
+.left30{
+	padding-left:30px;
+}
+.left40{
+	padding-left:40px;
+}
+.resaltarTx{
+	font-weight:bold;
+}
+
+.BienveUsuario{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:21px;
+	color:#0C3971;
+	float:left;
+	margin-top:11px;
+	margin-left:40px;
+}
+
+ #posicionBusqueda{
+	 width:189px;
+	 height:35px;
+	 float: right;
+	 margin-top:12px;
+	 margin-right:10px;
+ }
+  #posicionFecha{
+	 width:200px;
+	 font-family:Arial, Helvetica, sans-serif;
+	 font-size:12px;
+	 color:#0C3971;
+	 float: right;
+	 text-align:center;
+	 margin-top:23px;
+ }
+.inputGris{
+	width:400px;
+	height:22px;
+	margin-left:10px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	color:#000;
+	text-align:center;
+	color:#555;
+	background-color:#f3f3f4;
+	border-radius:3px 0 0 3px;
+	-moz-border-radius:3px 0 0 3px;
+	-webkit-border-radius:3px 0 0 3px;
+	-o-border-radius:3px 0 0 3px;
+	box-shadow:inset 3px 3px 3px #999;
+	-moz-box-shadow:inset 5px 5px 5px #999;
+	-o-box-shadow:inset 5px 5px 5px #999;
+	-webkit-box-shadow:inset 5px 5px 5px #999;
+	border:solid 1px #999;
+	padding: 4px 0px 4px 0px;
+}
+.sinDatos{
+	border:solid 1px red;
+	background-color:#f3f3f3;
+}
+.inputGris2{
+	width:160px;
+	height:27px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	color:#000;
+	text-align:center;
+	float:left;
+	background-color:#f3f3f4;
+	border-radius:3px 0 0 3px;
+	-moz-border-radius:3px 0 0 3px;
+	-webkit-border-radius:3px 0 0 3px;
+	-o-border-radius:3px 0 0 3px;
+	box-shadow:inset 3px 3px 3px #999;
+	-moz-box-shadow:inset 5px 5px 5px #999;
+	-o-box-shadow:inset 5px 5px 5px #999;
+	-webkit-box-shadow:inset 5px 5px 5px #999;
+	border:solid 1px #999;
+}
+.h3Right{
+	background:url(../../imagenes/netoOnline/h3.png) no-repeat ;
+	width:10px;
+	height:85px;
+	float: right;
+}
+
+#Bloque1{
+	/*background:url(../../imagenes/netoOnline/bgCont.jpg);*/
+	width:100%;
+	height:600px;
+	float:left;
+}
+
+#contMenu{
+	margin:auto;
+	float:left;		
+}
+#menu {
+	width:950px;
+	float:left;
+	margin-left:20px;
+	cursor:pointer;
+}
+#menu  li {
+	float:left;
+	width:230px;
+	height:31px;
+	padding:0 0 5px 0 !important;
+	text-align:center;
+	list-style:none;
+	margin-right:0px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:19px;
+	text-decoration:none;
+	background: #e2e2e2; /* Old browsers */
+	display:block;
+	line-height:17px;/*Se agrego para cuando el texto se va a doble renglon marz20*/
+}
+#menu li a{
+	text-decoration:none;
+	color:#333;
+	height:31px;
+	display:block;
+	text-align:center;
+	padding-top:12px;
+	border-left:solid 1px #CCC;
+	border-right:solid 1px #FFF;
+	border-top:solid 1px #FFF;
+	border-bottom:solid 1px #ccc;
+  background: -moz-linear-gradient(top,  #e2e2e2 0%, #dbdbdb 50%, #cfcfcf 51%, #fefefe 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e2e2e2), color-stop(50%,#dbdbdb), color-stop(51%,#cfcfcf), color-stop(100%,#fefefe)); /* Chrome,Safari4+ */
+  
+  background: -webkit-linear-gradient(top,  #e2e2e2 0%,#dbdbdb 50%,#cfcfcf 51%,#fefefe 100%); /* Chrome10+,Safari5.1+ */
+  
+  background: -o-linear-gradient(top,  #e2e2e2 0%,#dbdbdb 50%,#cfcfcf 51%,#fefefe 100%); /* Opera 11.10+ */
+  
+  background: -ms-linear-gradient(top,  #e2e2e2 0%,#dbdbdb 50%,#cfcfcf 51%,#fefefe 100%); /* IE10+ */
+  
+  background: linear-gradient(top,  #e2e2e2 0%,#dbdbdb 50%,#cfcfcf 51%,#fefefe 100%); /* W3C */
+  
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=0 ); /* IE6-9 */
+}
+
+#menu li a:hover, #menu li .activo{
+  border-left:solid 1px #155FB9;
+  border-right:solid 1px #3A70B0;
+  border-top:solid 1px #3A70B0;
+  border-bottom:solid 1px #ccc;
+  display:block;
+  color:#FFF;
+  background: #1e5799; /* Old browsers */
+  background: -moz-linear-gradient(top,  #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(50%,#2989d8), color-stop(51%,#207cca), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
+  
+  background: -webkit-linear-gradient(top,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
+  
+  background: -o-linear-gradient(top,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Opera 11.10+ */
+  
+  background: -ms-linear-gradient(top,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* IE10+ */
+  
+  background: linear-gradient(top,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* W3C */
+  
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+
+}
+#menu .busquedaTdas{
+	width:230px;
+}
+#menu .facturaE{
+	width:240px;
+}
+
+#colDerecha{
+	width:948px;
+	height:550px;
+	float:left;
+	padding:5px;
+	margin: 10px 15px 0 -35px;
+}
+
+#menuNivel2{
+	width:200px;
+	height:475px;
+	float:left;
+	margin:5px 0 0 18px;
+	background-color:#FFF;
+}
+
+.buscadorSucursales{
+	position: absolute;
+    color: #1a4579;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    width: 100%;
+    height: 40px;
+    padding: 116px 0 0 0px;
+    z-index: 10;
+    left: 25%;
+}
+.mapaZonificado{ 
+	position: absolute;
+    left: -111px;
+ 	width:100%; 
+ 	height:100%;  
+ 	margin:0px; 
+ 	padding:0px;
+}
+.mapaZonificado tr{ 
+ 	height:100%;  
+ 	margin:0px; 
+ 	padding:0px;
+}
+.mapaZonificado td{ 
+ 	height:100%;  
+ 	margin:0px; 
+ 	padding:0px;
+}
+.txtDirSuc{	
+	padding-left:20px;
+	margin:auto;
+}
+.espaciado{
+	padding: 13px 0px 0px 10px;
+	float:left;
+}
+.contenedorBusq1{
+	float:left;
+	height: 40px;
+    background-color: #C9C9C9;
+	
+}
+.icolupa {
+	width: 25px;
+    height: 25px;
+    float: right;
+    cursor: pointer;
+    margin-left: -22px;
+    margin-top: 5px;
+}
+
+.header_menu{
+  margin-top:3px;	
+  font-weight:bold;
+  text-align:center;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:12px;
+  padding:3px;
+  display:block;
+  color:#FFF;
+  background: #1e5799; /* Old browsers */
+  background: -moz-linear-gradient(top,  #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(50%,#2989d8), color-stop(51%,#207cca), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
+  
+  background: -webkit-linear-gradient(top,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
+  
+  background: -o-linear-gradient(top,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Opera 11.10+ */
+  
+  background: -ms-linear-gradient(top,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* IE10+ */
+  
+  background: linear-gradient(top,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* W3C */
+  
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+
+}
+.flecha_menu{
+	margin: 0px;
+	background: url(../../imagenes/netoOnline/menu_arrow.png) 15px 0px no-repeat; 
+	width:100%;
+	height:8px;
+}
+ul.btn_menu li{
+	color:#666;
+	text-align:left;
+  	font-family:Arial, Helvetica, sans-serif;
+  	padding:3px;
+  	font-size:11px;
+  	border-bottom:1px dashed #ff9900;
+  	background: url(../../imagenes/netoOnline/menu_arrow2.png) 95% 50% no-repeat; 
+}
+ul.btn_menu li div{
+	padding:2px;
+	padding-left:10px;
+}
+ul.btn_menu li div:hover{
+	cursor:pointer;
+	color:#333;
+	/*height:20px;*/
+	background: #ffc345 url(../../imagenes/netoOnline/menu_arrow3.png) 97% 50% no-repeat;
+	border-radius:8px;	
+	-webkit-border-radius:8px;
+	-moz-border-radius:8px;
+	-o-border-radius:8px; 
+}
+
+#herramientas{
+	width:989px;
+	height:90px;
+	background: url(../../imagenes/netoOnline/bgNegro.jpg) repeat-y;
+	float:left;
+}
+.bgremate{	
+	
+	width:450px;
+	height:109px;
+	float:right;
+	margin-top:5px;
+	margin-right:2px;
+}
+.remateC{
+	background-color:#FF9900;
+	height:68px;
+	width:406px;
+	float:left;
+}
+.remateR{
+	width:8px;
+	height:80px;
+	float:right;
+	background:url(../../imagenes/netoOnline/remateR_small.png) no-repeat;
+}
+.remateL{
+	width:36px;
+	height:80px;
+	float:left;
+	background:url(../../imagenes/netoOnline/remateL_small.png) no-repeat;
+}
+
+.ContColIzq{
+	height:90px;
+	float:left;
+	display:block;
+	margin-top:3px;
+	margin-left:15px;
+}
+
+.linksBottom{
+	width:200px;
+	height:73px;
+	float:right;
+	padding-top:10px;
+	color:#CCC;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+}
+
+.linksBottom li{
+	width:250px;
+	height:25px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	color:##B8B8B8;
+	list-style:url(../../imagenes/netoOnline/bulletBottom.png);
+}
+.linksBottom li a{
+	color:#B8B8B8;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	text-decoration:none;
+	
+}
+.linksBottom li a:hover{
+	color:#FFF;
+	text-decoration:underline;
+	
+}
+.icoSocial{
+	width:24px;
+	height:24px;
+	float:right;
+	margin:50px 5px 0 20px;
+	cursor: pointer;
+}
+.globoAviso{
+	width:120px;
+	height:44px;
+	float:left;
+	background:url(../../imagenes/netoOnline/globoAviso.png) no-repeat;
+	margin:12px 0 0 25px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:20px;
+	color:#FF0000;
+	padding-top:15px;
+	padding-left:25px;
+}
+.acceso_proveedores{
+	width:150px;
+	height:44px;
+	float:left;
+	background:url(../../imagenes/netoOnline/iconAccesoProveedores.png) no-repeat;
+	margin:7px 0 0 25px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#FFF;
+	padding:10px 0 0 40px;
+}
+.factura_e{
+	width:125px;
+	height:44px;
+	float:left;
+	background:url(../../imagenes/netoOnline/iconFacturaElectronica.png) no-repeat;
+	margin:9px 0 0 25px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#FFF;
+	padding:10px 0 0 35px;
+}
+.atencion_clientes{
+	width:140px;
+	height:44px;
+	float:left;
+	background:url(../../imagenes/netoOnline/iconTelefono.png) no-repeat;
+	margin:8px 0 0 25px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#FFF;
+	padding:0px 0 0 20px;
+	text-align:center;
+}
+.comentarios{
+	height:44px;
+	float:left;
+	background:url(../../imagenes/netoOnline/iconCorreo.png) 0px 2px no-repeat;
+	margin:12px 0 0 25px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#FFF;
+	padding:0px 0 0 30px;
+	text-align: left;
+}
+.acceso_proveedores:hover,
+.factura_e:hover{
+	text-decoration:underline;
+	cursor:pointer;
+}
+.bordeBottom{
+	border-bottom:1px dotted #ff9900;
+}
+
+.ui-menu-item{
+	font-family:   Verdana,Arial,sans-serif; 
+	font-size:     11px;
+	font-weight:   normal;	
+	text-tranform: capitalize;
+}
+
+#container{
+	position:relative;
+  	height:700px;
+}
+#googleMap{
+	position: absolute;
+  	border: 1px dashed #C0C0C0;
+  	border-right: 1px solid #ccc;
+  	width: 100%;
+  	height:653px;
+  	float:left;
+  	left: 0px;
+    top: 115px;
+}
+
+.cluster{
+	color: #002663;
+    text-align:left;
+    font-family: Verdana;
+    font-size:10px;
+    font-weight:normal;
+    padding-top:9px;
+	text-shadow: 0 0 1px #000;
+    -moz-text-shadow: 0 0 1px #000;
+    -webkit-text-shadow: 0 0 1px #000;
+}
+.cluster-1{
+	background: url(../../imagenes/netoOnline/neto1.png) no-repeat;
+    line-height:0px;
+    width: 41px;
+    height: 45px;
+	padding-left:9px;
+}
+
+.cluster-2{
+	background: url(../../imagenes/netoOnline/neto1.png) no-repeat;
+    line-height:0px;
+    width: 41px;
+    height: 45px;
+	padding-left:5px;
+}
+.cluster-3{
+	background: url(../../imagenes/netoOnline/neto2.png) no-repeat;
+    line-height:0px;
+    width: 44px;
+    height: 59px;
+	padding:13px 0 0 6px;
+	font-size:12px;
+}
+    
+.tooltip{
+	width: 350px;
+	font-size:13px;
+	font-family: Verdana, Helvetica,sans-serif,Arial;
+	border:1px solid #efb45c;
+	border-right:none;
+	border-top:none;
+	border-left:none;
+}
+ 
+.header_tooltip{
+	padding-bottom:8px;
+	border:1px solid #efb45c;
+	border-right:none;
+	border-top:none;
+	border-left:none;
+ }
+ .poligonoRegionTooltip{
+ 	font-size:13px;
+	font-family: Verdana, Helvetica,sans-serif,Arial;
+    margin:0px;
+	padding-top:15px;
+	font-weight:bold;
+ }
+ .poligonoZonaTooltip{
+ 	font-size:12px;
+	font-family: Verdana, Helvetica,sans-serif,Arial;
+    margin:0px;
+	padding-top:15px;
+	font-weight:bold;
+ }
+  
+ .tienda{
+	color:#ff6600;
+	text-align:left;
+	font-weight:bold;
+ }
+ .nombre{
+	color:#6a6a6a;
+	text-align:left;
+	font-weight:bold;
+ }
+ .noTda{
+	color:#6a6a6a;
+	text-align:left;
+	padding-left:10px;
+ }
+ .numero{
+	color:#6a6a6a;
+	text-align:left;
+ }
+ .address_tooltip{
+	padding:10px 7px 10px 7px;
+	color:#333;
+ }
+ .region_zona_tooltip{
+    padding:10px 7px 0px 7px;
+	color:#333;
+	font-weight:bold;
+ }
+.telf_tooltip{
+	color:#6a6a6a;
+	padding:0px 7px 10px 7px;
+}
+#listaRegiones{
+	height: 350px;
+    margin-right: 0px;
+    background: white;
+    display: none;
+    overflow: auto;
+    position: relative;
+    float: left;
+    width: 250px;
+    /* margin-top: -32px; */
+    /* background: transparent; */
+    filter: alpha(opacity=85);
+    opacity: 0.85;
+    /* top: 119px; */
+ }
+ #todasRegiones{
+    float:left;
+ 	height: 300px;
+	margin-right:0px;
+ }
+ #regionesArea{
+ 	width:190px;  
+ 	margin:0px; 
+ 	height:100%; 
+ 	top:0px; 
+ 	vertical-align:top
+ }
+ #cedisArea{
+ 	width:250px;  
+ 	margin:0px; 
+ 	height:100%; 
+ 	top:639px; 
+ 	vertical-align:top
+ }
+ #maximizarMapa{
+ 	cursor:pointer;
+ 	float:right;
+ 	margin:-15px 10px 0px 0px
+ }
+.region{
+   	float: right;
+    width: 225px;
+    padding: 5px 0px 0px 0px;
+    height: 35px;
+    border-bottom: 1px dashed #91BCD2;
+}
+.toggle_region{
+	width:23px;
+	height:22px;
+ 	float:left;
+ 	cursor:pointer;
+ 	margin:3px 0px 0px -8px;
+}
+.toggle_region div{
+	width:23px;
+	height:22px;
+ 	float:left;
+}
+.toggle_todas_region{
+	width:23px;
+	height:45px;
+ 	float:left;
+ 	cursor:pointer;
+ 	margin:8px 0px 0px 2px;
+}
+.toggle_todas_cedis{
+	width:23px;
+	height:45px;
+ 	float:left;
+ 	cursor:pointer;
+ 	margin:8px 0px 0px 2px;
+}
+.toggle_todas_tiendas{
+	width:23px;
+	height:25px;
+ 	float:left;
+ 	cursor:pointer;
+ 	margin:5px 0px 0px 3px;
+ 	border:solid 1px #bbb;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-o-border-radius:5px;
+	-webkit-border-radius:5px;
+	display:block;
+	text-decoration:none;
+	background: #e2e2e2; /* Old browsers */
+	background: -moz-linear-gradient(top,  #e2e2e2 0%, #f7f7f7 9%, #f2f2f2 26%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e2e2e2), color-stop(9%,#f7f7f7), color-stop(26%,#f2f2f2), color-stop(50%,#dbdbdb), color-stop(51%,#d1d1d1), color-stop(100%,#fefefe)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #e2e2e2 0%,#f7f7f7 9%,#f2f2f2 26%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #e2e2e2 0%,#f7f7f7 9%,#f2f2f2 26%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #e2e2e2 0%,#f7f7f7 9%,#f2f2f2 26%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* IE10+ */
+	background: linear-gradient(top,  #e2e2e2 0%,#f7f7f7 9%,#f2f2f2 26%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=0 ); /* IE6-9 */
+}
+.toggle_todas_tiendas img{
+	margin: 3px 0px 0px 5px; 
+}
+.flechaAbajo{
+	margin:0px;
+	padding:0px;
+	display:block;
+	height:58px;
+	width:170px;
+	background:url('../../imagenes/netoOnline/flechaAbajoRegiones.png') no-repeat 57px 100%;	
+}
+.flechaArriba{
+	font:11px Verdana, Helvetica, sans-serif;
+	color:#6d6d6d;
+	margin:0px;
+	padding:0px 0px 0px 5px;
+	display:block;
+	height:20px;
+	width:186px;
+	/*
+	background:url('../../imagenes/netoOnline/flechaArribaRegiones.png') no-repeat 57px 100%;
+	border-bottom:3px solid #ededeb;	*/
+}
+.separadorHead{
+	height:80px;
+}
+.toggle_todas_region{
+	background:url('../../imagenes/netoOnline/noMostrarRegion.png') no-repeat;
+}
+
+.labels {
+   color: red;
+   font-family:  Arial, sans-serif;
+   font-weight:900;
+   font-size: 12px;
+   letter-spacing:-1px;
+   text-align: center;
+   width: 20px;
+   float:left;
+   margin:0px; 	 
+   /*white-space: nowrap;*/
+ }
+.nombre_region{
+	float: right;
+    width: 190px;
+    height: 26px;
+    margin-right: 6px;
+    font-weight: bold;
+    display: block;
+    text-decoration: none;
+    color: #0C3971;
+}
+.txt_Region{
+	font: 11px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight:bold;
+	height:35px;
+	padding:6px 0px 0px 0px;
+	color:#222;
+}
+.txt_Region img{
+	float:left;
+	margin:-3px 2px 0px 3px;
+}
+.txt_Region div{
+	float:right;
+	margin:-1px 3px 0px 0px;
+}
+.infoZonas{
+	height:16px;
+	width:16px;
+	cursor:pointer;
+}
+.cantidadTdasRegion{
+	height: 14px;
+    width: 21px;
+    /* border-radius: 5px; */
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    /* -webkit-border-radius: 5px; */
+    /* background: #727272; */
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+    color: black;
+    font: 12px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    padding: 1px 0px 0px 0px;
+    text-align: center;
+}
+.masInfo{
+	background:url('../../imagenes/netoOnline/masInfo.png') no-repeat 0% 0%;
+}
+.menosInfo{
+	background:url('../../imagenes/netoOnline/menosInfo.png') no-repeat 0% 0%;
+}
+.toggle_tiendas{
+	cursor:pointer;
+}
+#todasRegion{
+	/*height:45px;*/
+}
+.txt_todas_Region{
+	font: 10px Verdana, Helvetica,sans-serif,Arial;
+	font-weight:bold;
+	padding:6px 0px 0px 7px;
+	color:#6d6d6d;
+	float:left;
+}
+/************************/
+.zonasRegion{
+	float: right;
+    width: 200px;
+    padding: 2px 0px 3px 0px;
+    /* border-radius: 5px; */
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    /* -webkit-border-radius: 5px; */
+    /* background: #6d6d6d; */
+    display: none;
+    margin-right: 6px;
+}
+.zonas{
+   	float: right;
+    width: 200px;
+    padding: 0px 0px 0px 0px;
+}
+.toggle_zona{
+	width:22px;
+	height:23px;
+ 	float:left;
+ 	cursor:pointer;
+ 	margin:3px 0px 0px 2px;
+}
+.z_NoVisible{
+	background:url('../../imagenes/netoOnline/noMostrarZona.png') no-repeat;
+}
+.z_Visible{
+	background:url('../../imagenes/netoOnline/mostrarZona.png') no-repeat;
+}
+.nombre_zona{
+	float: right;
+    margin-right: 3px;
+    margin-top: 2px;
+    width: 160px;
+    height: 21px;
+    font-weight: bold;
+    /* border: solid 1px #bbb; */
+    /* border-radius: 5px; */
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    /* -webkit-border-radius: 5px; */
+    display: block;
+    text-decoration: none;
+    color: #0C3971;
+    /* background: #e2e2e2; */
+    /*background: -moz-linear-gradient(top, #e2e2e2 0%, #f7f7f7 9%, #f2f2f2 26%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%);*/
+    /* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e2e2e2), color-stop(9%,#f7f7f7), color-stop(26%,#f2f2f2), color-stop(50%,#dbdbdb), color-stop(51%,#d1d1d1), color-stop(100%,#fefefe)); */
+    /* background: -webkit-linear-gradient(top, #e2e2e2 0%,#f7f7f7 9%,#f2f2f2 26%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); */
+    /*background: -o-linear-gradient(top, #e2e2e2 0%,#f7f7f7 9%,#f2f2f2 26%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%);*/
+    /*background: -ms-linear-gradient(top, #e2e2e2 0%,#f7f7f7 9%,#f2f2f2 26%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%);*/
+    /*background: linear-gradient(top, #e2e2e2 0%,#f7f7f7 9%,#f2f2f2 26%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%);*/
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=0 )
+}
+.txt_Zona{
+	font: 10px Verdana, Helvetica,sans-serif,Arial;
+	font-weight:bold;
+	height:25px;
+	padding:4px 0px 0px 5px;
+	color:#555;
+}
+.txt_Cantidad{
+	font: 11px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    float: right;
+    position: relative;
+    top: -1px;
+    width: 18px;
+    height: 18px;
+    color: #000;
+    padding-right: 2px;
+    padding-top: 2px;
+    text-align: center;
+    /* background: url('../../imagenes/netoOnline/fondoCantidadTiendas.png') 1px 0px no-repeat; */
+    letter-spacing: 0px;
+}
+/************************/
+#mostrarTodos{
+	float: left;
+    position: absolute;
+    height: 48px;
+    width: 250px;
+    padding: 0px;
+    background: #ededeb;
+    top: 35px;
+}
+ .productosArea,
+ .regionesArea{
+ 	float: right;
+    width: 250px;
+    height: 35px;
+    text-align: left;
+    background: #F15C22;
+ }
+  .productosArea,
+ .cedisArea{
+ 	float: right;
+    width: 250px;
+    height: 35px;
+    text-align: left;
+    background: #BDBDBD;
+ }
+ .productosHead,
+ .regionHead{
+ 	padding: 10px 0 0 97px; 
+ 	font-weight: bold; 
+    color: white; 
+    font-size:16px;
+    /*background:url('../../imagenes/netoOnline/flechaProductosDown.png') 8% 88% no-repeat;*/
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+ }
+ .regionHead:hover,
+ .productosHead:hover{
+ 	text-decoration:underline;
+ 	cursor:pointer;
+ }
+ .productosHead,
+ .cedisHead{
+ 	padding: 10px 0 0 97px; 
+ 	font-weight: bold; 
+ 	color: white; 
+    font-size:16px;
+    /*background:url('../../imagenes/netoOnline/flechaProductosDown.png') 8% 88% no-repeat;*/
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+ }
+ .cedisHead:hover,
+ .productosHead:hover{
+ 	text-decoration:underline;
+ 	cursor:pointer;
+ }
+ .productosCarrusel{
+ 	width:175px; 
+	height: 560px;
+	float:right; 
+	margin-right:0 2px 0 0;
+ }
+ .list_carousel ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+}
+.list_carousel li {
+	font: 12px Verdana, Helvetica, sans-serif;
+	font-weight:bold;
+	color: #999;
+	text-align: center;	
+	background:url('../../imagenes/netoOnline/separadorArticulos.png') 0% 100% no-repeat;
+	width:170px;
+	height:140px;
+	padding: 15px 0 0 0;
+	display: block;
+	float: left;
+}
+.articulo{
+	padding-top:2px;
+	color: #2e5682;	
+	
+}
+.precio{
+	color: #fe591c; 
+}
+.arriba{
+	width:175px; 
+	height: 40px;
+	background:url('../../imagenes/netoOnline/top_btn.png') 50% 80% no-repeat;
+}
+.arriba:hover{
+	cursor:pointer;
+	background:url('../../imagenes/netoOnline/top_btnOver.png') 50% 80% no-repeat;
+}
+
+.abajo{
+	width:175px; 
+	height: 45px;
+	background:url('../../imagenes/netoOnline/bottom_btn.png') 50% 70% no-repeat;
+}
+.abajo:hover{
+	cursor:pointer;
+	background:url('../../imagenes/netoOnline/bottom_btnOver.png') 50% 70% no-repeat;
+}
+
+.timer {
+	background-color: #ccc;
+	height: 5px;
+	width: 0px;
+	margin-top:8px;
+}
+.atencion_clientes{
+	width:350px;
+	height:44px;
+	float:left;
+	background:url(../../imagenes/netoOnline/iconTelefono.png) 0px 5px no-repeat;
+	margin:3px 0 0 45px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#FFF;
+	padding:0px 0 0 20px;
+	text-align:center;
+}
+.bordeBottom{
+	border-bottom:1px dotted #ff9900;
+	padding:2px 0 3px 0;
+}
+.telefono{
+	padding:2px 0 3px 0;
+	font-weight:bold;
+	font-size:14px;
+}
+
+.atencion_clientes2{
+	width:340px;
+	height:44px;
+	float:left;
+	background:url(../../imagenes/netoOnline/iconTelefono.png) 0px 5px no-repeat;
+	margin:10px 0 0 45px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#003471;
+	padding:0px 0 0 20px;
+	text-align:center;
+}
+.bordeBottom2{
+	border-bottom:1px dotted #003471;
+	padding:2px 0 3px 0;
+}
+.telefono2{
+	padding:2px 0 3px 0;
+	font-weight:bold;
+	font-size:14px;
+}

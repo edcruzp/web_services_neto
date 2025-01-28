@@ -1,0 +1,155 @@
+
+					<div class="row header-bottom">
+					<div class="large-12 columns noPadding hide-for-small">
+						<h2 id="tituloCabecero"><{- tituloCabecero }></h2>
+						<div class="large-header">
+						<span id="regionL" >Todas las Regiones</span> 
+						<span id="zonaL" >Todas las Zonas</span>
+						<span id="tiendaL" >Todas las Tiendas</span>
+						</div>
+						<h3 id="subTituloCabecero"><{- subTituloCabecero }></h3>
+					</div>
+				</div>
+				
+	<div id="contenedorRegiones" class="row" align="center">
+		<div id="spacer" class="row show-for-small"></div>
+		<div id="contenedorBotones" class="large-3 columns">
+		<label id="regionTitle">Regiones</label>
+			<button id="btnBack" onclick="back()"></button>
+			<div id="contenedorBotonesRegiones" class="large-12 columns"></div>
+			
+			<div id="contenedorBotonesTiendas" class="large-12 columns">
+			</div>
+			
+		</div>
+		<div class="large-9 columns" align="center">
+			<div class="large-12 row" align="center">
+				<div id="pie" class="large-4 columns noPadding">
+					<img src="images/loading51.gif" class="loading" />
+				</div>
+				<div id="contenedorCuadroTA" class="large-4 columns noPadding">
+					<table id="tablaTA">
+						<tbody>
+							<tr>
+								<td><img src="images/telcel.png" alt="telcel"></td>
+								<td><span id="td_telcel"> </span></td>
+							</tr>
+							<tr>
+								<td><img src="images/movistar.png" alt="telcel"></td>
+								<td id="td_movistar"></td>
+							</tr>
+							<tr>
+								<td><img src="images/iusacell.png" alt="telcel"></td>
+								<td id="td_iusacell"></td>
+							</tr>
+							<tr>
+								<td><img src="images/unefon.png" alt="telcel"></td>
+								<td id="td_unefon"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div id="pieTA" class="large-4 columns noPadding">
+					<img src="images/loading51.gif" class="loading" />
+				</div>
+			</div>
+			<label id="zonaTitle">Zonas</label>
+			<div id="contenedorBotonesZonas" class="large-12 row"></div>
+		</div>
+
+	</div>
+	<div class="row">
+		<div class="large-12 columns">
+
+			<div class="hide-for-small" class="row">
+				<div align="center" class="large-9 columns">
+					<div id="varDay" name="graficaBarras">
+						<img src="images/loading51.gif" class="loading" />
+					</div>
+				</div>
+				<div class="large-3 columns">
+					<div align="center">
+						<div id="contenedorDatosGraficas" class="large-12 columns">
+							<br>
+							<div class="switch">
+								<input id="srvTA" name="switch-z" type="radio" checked>
+								<label for="TA" >Sin T.A.</label> <input id="srvTA1"
+									name="switch-z" type="radio"> <label for="TA1" >Con
+									T.A.</label> <span></span>
+							</div>
+							<div class="switch">
+								<input id="srvIVA" name="switch-x" type="radio" checked>
+								<label for="x" >Sin impuestos</label> <input id="srvIVA1"
+									name="switch-x" type="radio"> 
+									<label for="x1">Con impuestos</label>  
+									<span></span>
+							</div>
+							<div class="switch">
+								<input id="switchSemanas" name="switch-y" type="radio" checked>
+								<label for="Semanas" >Por d&iacute;a</label> <input
+									id="switchSemanas1" name="switch-y" type="radio"> <label
+									for="Semanas1" >Semanas</label> <span></span>
+							</div>
+							<ul id="contenedorDescripcionGraficas">
+								<img src="images/red.png" class="small-3 columns">
+								<label style="text-align: left;">Venta Promedio</label>
+								<img src="images/blue.png" class="small-3 columns">
+								<label style="text-align: left;">Venta Real</label>
+								<img src="images/green.png" class="small-3 columns">
+								<label style="text-align: left;" id="labelActual">D&iacute;a Actual</label>
+								<span id="anioAnterior">
+									<img src="images/gray.png" class="small-3 columns">
+									<label style="text-align: left;">A&ntilde;o Anterior</label>
+								</span>	
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="small-12 show-for-small ">
+				<div align="center" class="large-9 columns noPadding">
+					<div id="varDay2" name="graficaBarras">
+						<img src="images/loading51.gif" class="loading" />
+					</div>
+				</div>
+				<div class="large-3 columns">
+					<div align="center">
+						<div id="contenedorDatosGraficas" class="large-12 columns">
+							<br>
+							<div class="switch">
+								<input id="srvTA2" name="switch-m" type="radio" checked>
+								<label for="TA" >Sin T.A.</label> <input id="srvTA12"
+									name="switch-m" type="radio"> <label for="TA1" >Con
+									T.A.</label> <span></span>
+							</div>
+							<div class="switch">
+								<input id="srvIVA2" name="switch-l" type="radio" checked>
+								<label for="x" >Sin impuestos</label> <input id="srvIVA12"
+									name="switch-l" type="radio"> <label for="x1" >Con Impuestos</label> 
+									<span></span>
+							</div>
+							<div class="switch">
+								<input id="switchSemanas2" name="switch-j" type="radio" checked>
+								<label for="Semanas" >Por d&iacute;a</label> <input
+									id="switchSemanas12" name="switch-j" type="radio"> <label
+									for="Semanas1" >Semanas</label> <span></span>
+							</div>
+							<ul id="contenedorDescripcionGraficas">
+								<img src="images/red.png" class="large-2 small-2 columns"/>
+								<label style="text-align: left;">Venta Promedio</label>
+								<img src="images/blue.png" class="large-2 small-2 columns"/>
+								<label style="text-align: left;">Venta Real</label>
+								<img src="images/green.png" class="large-2 small-2 columns"/>
+								<label style="text-align: left;" id="labelActual">D&iacute;a Actual</label>
+								<span id="anioAnterior">
+									<img src="images/gray.png" class="small-3 columns">
+									<label style="text-align: left;">A&ntilde;o Anterior</label>
+								</span>	
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>

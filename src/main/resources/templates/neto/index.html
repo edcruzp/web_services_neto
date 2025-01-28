@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Login Indicadores NETO</title>
+
+<link rel="stylesheet" href="js/libs/foundation/css/normalize.css">
+<link rel="stylesheet" href="js/libs/foundation/css/foundation.css">
+<link rel="stylesheet" href="css/login/login.css">
+<script src="js/libs/foundation/js/vendor/jquery.js"></script>
+<script src="js/libs/foundation/js/vendor/custom.modernizr.min.js"></script>
+<script src="js/libs/foundation/js/foundation.min.js"></script>
+
+<script type="text/javascript" src="js/accionesLogin/accionesLogin.js"> </script>
+
+</head>
+<body>
+	<!-- JavaScript deshabilitado -->
+	<noscript>
+		<h1>No tienes soporte para Javascript, por favor actívalo en tu
+			navegador.</h1>
+	</noscript>
+
+	<header class="full-width header-area">
+		<nav class="top-bar">
+			<ul class="">
+				<li class="name"><a href="#"><img id="logoNeto"
+						src="images/logoNeto.png"></a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div id="contenedorPrincipal" class="row large-3 small-9">
+		<br/>
+		<div style="text-align: left;" class="loginDatos">
+			
+			<input type="text" id="usuarioId" placeholder="Usuario" class="textoDatos" size="27" type="number" pattern="[0-9]{5,10}" title="Introduzca su Usuario y presione ENTER" onkeydown="presionaEnter(1,event);" />
+			<input type="password" id="passId" placeholder="Contraseña" class="textoDatos" size="27" title="Introduzca su Contraseña y presione ENTER" onkeydown="presionaEnter(2,event);" />
+		</div>
+		<div id="bloqMayusIndicador"
+			style="position: absolute; font: 11px Arial, Helvetica, sans-serif; color: #cf4e00; padding-left: 30px; margin-left: 190px; margin-top: -30px; background: url('images/ico-warning.gif') 0% 0% no-repeat; display: none;">
+			Bloq Mayús activado</div>
+			
+<!-- 	 	<span style="padding-top: 110px;"></span> -->
+
+		<div class="loginCaptcha">
+			<label for="captcha">Introduce los siguientes caracteres:</label> 
+			<input type="text" id="captcha" name="kaptcha" value=""	onkeydown="presionaEnter(3,event);" />
+			<br/> 
+			<img src="kaptcha.jpg" id="captchaIMG"/>
+			<small>Dale click para cargar otra imagen.</small>
+		</div>
+
+		<label for="error" id ="errorMsj"></label>	
+			
+		<div class="loginContBoton">
+
+			<button type="button" id="loginBoton" onclick="ingresar();" onkeydown="presionaEnter(4,event);" title="Ingresar a la Aplicación">ENTRAR</button>
+		</div>
+	</div>
+	<script>
+		$(document).foundation();
+	</script>
+</body>
+</html>

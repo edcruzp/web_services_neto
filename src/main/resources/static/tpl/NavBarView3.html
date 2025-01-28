@@ -1,0 +1,127 @@
+<div class="fixed">
+<div class="row" style="max-width: 100%;">
+	<header class="full-width header-area">
+		<nav id="navbar" class="top-bar">
+			<ul class="title-area">
+				<li class="name hide-for-small">
+					<div class="divLogo"><img id="logoNeto" src="images/flat/img_Logo.png" /></div>
+					<a href="<{- urlLogo }>"></a></li>
+				<li class="name show-for-small">
+					<div class="divLogo"><img id="logoNeto" style="margin-top: 5px;" src="images/flat/img_Logo.png" /></div>
+					<a href="<{- urlLogo }>"></a></li>
+			</ul>
+			<div class="tituloHeaderSmall show-for-small">
+				<div style="float: left;margin-left: 170px;font-size: 10px;">
+					<img width="20px" src="images/flat/ico_IndicadoresVenta.png" />
+					<span style="font-weight: lighter;font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 23px;">Indicadores de venta</span>
+				</div>
+				<div style="position: relative;float: right;margin-top: -8px;margin-right: 63px;font-size: 1px;height: 70px;">
+						<div style="height: 20px">
+							<span style="font-size: 18px;font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;" class="nombreUsuario">---</span></div>
+						<div>
+							<span style="font-size: 14px;font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;font-weight: lighter;" class="apUsuario">---</span>
+							<span style="font-size: 14px;font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;font-weight: lighter;" class="amUsuario">---</span></div>
+				</div>
+				<div style="position: relative;float: right;cursor: pointer;margin-right: -170px;" class="logOut"><img src="images/flat/ico_Cerrar.png"/></div>
+				<div class="fotoEmpleadoSmall">
+					<img class="fotoUsuario" style="display: none;" height="50px" width="48px;" alt="-" onerror="this.src='images/user.png'"  src="http://portal.gruposalinas.com.mx/fotos/EKT-BAZ/empleados/.jpg">
+					<div style="position: relative;float: right;margin-top: -8px;margin-right: 88px;font-size: 1px;height: 70px;">
+						<div style="height: 20px">
+							<span style="font-size: 18px;font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;" class="nombreUsuario">---</span></div>
+						<div>
+							<span style="font-size: 14px;font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;font-weight: lighter;" class="apUsuario">---</span>
+							<span style="font-size: 14px;font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;font-weight: lighter;" class="amUsuario">---</span></div>
+					</div>
+					<div style="position: relative;float: right;cursor: pointer;margin-right: -170px;" class="logOut"><img src="images/flat/ico_Cerrar.png"/></div>
+				</div>
+			</div>
+			
+			<div class="tituloHeader2 hide-for-small" style="margin-left: -150px;">
+				<img src="images/flat/ico_IndicadoresVenta.png" />&nbsp;&nbsp;
+				<span style="font-weight: lighter;font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 33px;">Indicadores de venta</span>
+				<div class="fotoEmpleado">
+					<img class="fotoUsuario" style="display: none;" height="50px" width="48px;" alt="-" onerror="this.src='images/user.png'"  src="http://portal.gruposalinas.com.mx/fotos/EKT-BAZ/empleados/.jpg">
+					<div style="position: relative;float: right;margin-top: -9px;margin-left: -190px;margin-right: 41px;">
+						<div style="height: 20px">
+							<span style="font-size: 18px;font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;" class="nombreUsuario">---</span></div>
+						<div>
+							<span style="font-size: 14px;font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;font-weight: lighter;" class="apUsuario">---</span>
+							<span style="font-size: 14px;font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;font-weight: lighter;" class="amUsuario">---</span></div>
+					</div>
+					<div style="position: relative;float: right;cursor: pointer;" class="logOut"><img src="images/flat/ico_Cerrar.png"/></div>
+				</div>
+			</div>
+			<!--  <section class="top-bar-section">
+				<ul class="left">
+					<li class=""><a href="<{- Link1 }>"><{- Desc1 }></a></li>
+					<li class=""><a href="<{- Link2 }>"><{- Desc2 }></a></li>
+					<li class=""><a class="logOut">Cerrar Sesi&oacute;n</a></li>
+				</ul>
+			</section> -->
+		</nav>
+		<div class="hide-for-small large-12 row header-bottom" style="margin-top: 25px;margin-left: -0px;max-width: 100%;">
+			<div class="botonHeader" style="width: 150px;background: transparent;" onclick="inicializaIndicadores();">
+				<div style="width:50px;float:left"><img class="imagenHeader" src="images/flat/ico_Inicio.png" />&nbsp;&nbsp;</div>
+				<div class="botonHeaderInner" style="width:100px;float:left;"><span class="txtHeader"><a href="#/" style="color: #4e4e4e">Inicio</a></span></div>
+			</div>
+			<div class="separadorHeader"></div>
+			<div class="botonHeader" style="width: 280px;background: #B7B7B7;">
+				<div style="width:50px;float:left"><img class="imagenHeader" src="imagenes/netoOnline/ico_pines.png" style="width: 30px;"/>&nbsp;&nbsp;</div>
+				<div class="botonHeaderInner"><span class="txtHeader"><a href="#/variacion" style="color: #4e4e4e">Administraci&oacute;n de Geograf&iacute;a</a></span></div></div>
+			<div class="separadorHeader" style="visibility: hidden;"></div>
+			<div class="botonHeader" style="width: 220px;margin-top: -6px;visibility: hidden;">
+				<div style="width:50px;float:left"><img class="imagenHeader" src="images/flat/ico_IndicadoresVariacion.png" />&nbsp;&nbsp;</div>
+				<div class="botonHeaderInner"><span class="txtHeader">Gr&aacute;ficas de variaci&oacute;n</span></div>
+			</div>
+			<div id="divFiltroMenu" style="float: right;width: 40px;height: 45px;background: #0057B4;margin-top: 0px;cursor: pointer;position: absolute;right: 0px;" onclick="muestraDivFiltroGeografia();">
+			<!-- <img  src="images/menu.png" /> -->
+				<div style="width: 20px;border-top: 2px solid #FFFFFF;margin-left: 9px;margin-top: 15px;"></div>
+				<div style="width:15px;border-top: 2px solid #FFFFFF;margin-left: 9px;margin-top: 5px;"></div>
+				<div style="width:20px;border-top: 2px solid #FFFFFF;margin-left: 9px;margin-top: 5px;"></div>
+			</div>
+			
+		</div>
+
+
+		<div class="show-for-small large-12 row" style="padding-top: 26px;background: #F1F0EB;height: 40px;">
+			<div align="center" class="large-9 columns">
+				<div class="botonHeader" style="width: 50px;padding-left: 20px;margin-top: -14px;" onclick="inicializaIndicadores();"> <img class="imagenHeader" src="images/flat/ico_Inicio.png" /> &nbsp;&nbsp;<div class="botonHeaderInner"><span class="txtHeader"></span></div></div>
+				<div class="separadorHeader" style="margin-top: -14px;display:none;"></div>
+				<div class="botonHeader" style="width: 50px;padding-left: 20px;margin-top: -14px;"><img class="imagenHeader" src="images/flat/ico_GrafVentas.png" />&nbsp;&nbsp;<div class="botonHeaderInner"><span class="txtHeader"></span></div></div>
+				<div class="separadorHeader" style="margin-top: -14px;display:none;"></div>
+				<div class="botonHeader" style="width: 50px;padding-left: 20px;margin-top: -14px;"><img class="imagenHeader" src="images/flat/ico_IndicadoresVariacion.png" />&nbsp;&nbsp;<div class="botonHeaderInner"><span class="txtHeader"></span></div></div>
+				<div id="divFiltroMenu" style="float: right;width: 40px;height: 40px;background: #0057B4;margin-top: -25px;cursor: pointer;" onclick="muestraDivFiltro();">
+				<!-- <img  src="images/menu.png" /> -->
+				<div style="width: 20px;border-top: 2px solid #FFFFFF;margin-left: 4px;margin-top: 11px;"></div>
+				<div style="width:15px;border-top: 2px solid #FFFFFF;margin-left: 4px;margin-top: 5px;"></div>
+				<div style="width:20px;border-top: 2px solid #FFFFFF;margin-left: 4px;margin-top: 5px;"></div>
+			</div>
+			</div>
+		</div>
+	</header>
+</div>
+</div>
+
+
+
+<!--       <div class="row "> -->
+<!--       <header class="full-width header-area"> -->
+<!-- 		<nav class="top-bar"> -->
+<!-- 		<ul class="title-area"> -->
+
+<!-- 			<li class="name"><a href="inicio.jsp"><img id="logoNeto" -->
+<!-- 					src="images/logoNeto.png"></a></li> -->
+<!-- 			<li class="toggle-topbar menu-icon"><a href="#"><span>menu&nbsp;&nbsp;&nbsp;</span></a> -->
+<!-- 			</li> -->
+<!-- 		</ul> -->
+<!-- 		<section class="top-bar-section"> -->
+<!-- 		<ul class="left"> -->
+<!-- 			<li><a href="inicio.jsp">Inicio</a></li> -->
+<!-- 			<li><a href="ventasregion.jsp">Gr&aacute;ficas de Ventas</a></li> -->
+<!-- 			</li> -->
+<!-- 			<li><a id="logOut">Cerrar Sesion</a></li> -->
+<!-- 		</ul> -->
+<!-- 		</section> </nav> -->
+
+<!--       </header> -->
+<!--       </div> -->

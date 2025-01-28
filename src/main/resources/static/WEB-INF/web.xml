@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+	<display-name>WebIndicadoresVenta</display-name>
+
+	<!-- ============================================================================================ -->
+	<welcome-file-list>
+		<welcome-file>indexFlat.html</welcome-file>
+		<welcome-file>indexFlat.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	<!-- ============================================================================================ -->
+	<!-- Proxy de acceso a servicios -->
+	<!-- ============================================================================================ -->
+	<servlet>
+		<display-name>Proxy</display-name>
+		<servlet-name>Proxy</servlet-name>
+		<servlet-class>neto.web.indicadores.venta.servlet.Proxy</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Proxy</servlet-name>
+		<url-pattern>/consulta</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description>
+		</description>
+		<display-name>DatosSucursales</display-name>
+		<servlet-name>DatosSucursales</servlet-name>
+		<servlet-class>mx.com.neto.online.mapas.DatosSucursales</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DatosSucursales</servlet-name>
+		<url-pattern>/DatosSucursales</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description>
+		</description>
+		<display-name>Buscador</display-name>
+		<servlet-name>Buscador</servlet-name>
+		<servlet-class>mx.com.neto.online.buscador.Buscador</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Buscador</servlet-name>
+		<url-pattern>/Buscador</url-pattern>
+	</servlet-mapping>
+
+	<!-- ============================================================================================ -->
+	<!-- Servlets de Autorizador -->
+	<!-- ============================================================================================ -->
+	<servlet>
+		<display-name>AutorizadorServlet</display-name>
+		<servlet-name>AutorizadorServlet</servlet-name>
+		<servlet-class>neto.web.servlets.AutorizadorServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AutorizadorServlet</servlet-name>
+		<url-pattern>/Autorizador</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<display-name>CerrarSesion</display-name>
+		<servlet-name>CerrarSesion</servlet-name>
+		<servlet-class>neto.web.servlets.CerrarSesion</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CerrarSesion</servlet-name>
+		<url-pattern>/CerrarSesion</url-pattern>
+	</servlet-mapping>
+	<!-- ============================================================================================ -->
+
+	<servlet>
+		<servlet-name>Kaptcha</servlet-name>
+		<servlet-class>com.google.code.kaptcha.servlet.KaptchaServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Kaptcha</servlet-name>
+		<url-pattern>/kaptcha.jpg</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>RecibeSesion</display-name>
+		<servlet-name>RecibeSesion</servlet-name>
+		<servlet-class>neto.sion.web.servlets.RecibeSesion</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RecibeSesion</servlet-name>
+		<url-pattern>/logSession</url-pattern>
+	</servlet-mapping>
+
+	<!-- ============================================================================================ -->
+	<!-- Filtros de Sesi-->
+	<!-- ============================================================================================ -->
+
+	<filter>
+		<display-name>FiltroRecibeSesion</display-name>
+		<filter-name>FiltroRecibeSesion</filter-name>
+		<filter-class>neto.sion.web.servlets.FiltroRecibeSesion</filter-class>
+	</filter>
+	<filter>
+		<display-name>FiltroSesiones</display-name>
+		<filter-name>FiltroSesiones</filter-name>
+		<filter-class>neto.sion.web.servlets.FiltroSesiones</filter-class>
+		<init-param>
+			<param-name>enable</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+	<filter>
+		<display-name>FiltroIpad</display-name>
+		<filter-name>FiltroIpad</filter-name>
+		<filter-class>neto.web.servlets.FiltroIpad</filter-class>
+		<init-param>
+			<param-name>enable</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+	<filter>
+		<display-name>FiltroTodo</display-name>
+		<filter-name>FiltroTodo</filter-name>
+		<filter-class>neto.sion.web.servlets.FiltroTodo</filter-class>
+		<init-param>
+			<param-name>enable</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+
+	<!-- ============================================================================================ -->
+	<!-- Mappings de Filtros -->
+	<!-- ============================================================================================ -->
+	<filter-mapping>
+		<filter-name>FiltroRecibeSesion</filter-name>
+		<url-pattern>/WebSite/*</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+		<dispatcher>FORWARD</dispatcher>
+		<dispatcher>INCLUDE</dispatcher>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>FiltroSesiones</filter-name>
+		<url-pattern>/consulta/*</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+		<dispatcher>FORWARD</dispatcher>
+		<dispatcher>ERROR</dispatcher>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>FiltroSesiones</filter-name>
+		<url-pattern>/js/indicadores/*</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+		<dispatcher>FORWARD</dispatcher>
+		<dispatcher>ERROR</dispatcher>
+		<dispatcher>INCLUDE</dispatcher>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>FiltroSesiones</filter-name>
+		<url-pattern>/WebSite/*</url-pattern>
+		<dispatcher>FORWARD</dispatcher>
+		<dispatcher>INCLUDE</dispatcher>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>FiltroIpad</filter-name>
+		<url-pattern>/WebSite/*</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+		<dispatcher>FORWARD</dispatcher>
+		<dispatcher>ERROR</dispatcher>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>FiltroTodo</filter-name>
+		<url-pattern>/WebSite/*</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+	</filter-mapping>
+	<listener>
+		<listener-class>mx.com.neto.central.util.HttpSessionCollector</listener-class>
+	</listener>
+	<error-page>
+		<exception-type>java.lang.Throwable</exception-type>
+		<location>/jsp_error/error.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>404</error-code>
+		<location>/jsp_error/error.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>500</error-code>
+		<location>/jsp_error/error.jsp</location>
+	</error-page>
+	<servlet>
+		<description></description>
+		<display-name>SesionCaducada</display-name>
+		<servlet-name>SesionCaducada</servlet-name>
+		<servlet-class>neto.web.servlets.SesionCaducada</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SesionCaducada</servlet-name>
+		<url-pattern>/SesionCaducada</url-pattern>
+	</servlet-mapping>
+
+	<!-- para ejecutar init en desarrollo
+    <servlet>
+      <description></description>
+      <display-name>Init</display-name>
+      <servlet-name>Init</servlet-name>
+      <servlet-class>neto.desarrollo.config.Init</servlet-class>
+      <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+      <servlet-name>Init</servlet-name>
+      <url-pattern>/Init</url-pattern>
+    </servlet-mapping>
+   -->
+
+	<context-param>
+		<param-name>file.config.log</param-name>
+		<param-value>AppWebIndicadoresVenta.xml</param-value>
+	</context-param>
+	<listener>
+		<listener-class>Com.Elektra.Log.Config.ContextConfigListener</listener-class>
+	</listener>
+
+	<filter>
+		<filter-name>WSSIONRequestFilter</filter-name>
+		<filter-class>neto.sion.filter.WSSIONRequestFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>WSSIONRequestFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+</web-app>
